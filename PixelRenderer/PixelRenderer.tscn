@@ -375,12 +375,6 @@ tooltip_text = "Reset animation parameters"
 icon = ExtResource("9_ilx0h")
 expand_icon = true
 
-[node name="IgnoreAnimation" type="CheckBox" parent="MainUI/LeftPanel" unique_id=205192751]
-unique_name_in_owner = true
-layout_mode = 2
-tooltip_text = "ignore animation when exporting 360 frames"
-text = "IGNORE ANIMATION"
-
 [node name="HSeparator9" type="HSeparator" parent="MainUI/LeftPanel" unique_id=1439936562]
 layout_mode = 2
 
@@ -507,6 +501,7 @@ uppercase = true
 unique_name_in_owner = true
 layout_mode = 2
 max_value = 360.0
+step = 0.5
 alignment = 2
 
 [node name="Export360" type="Button" parent="MainUI/LeftPanel/HBoxContainer10" unique_id=1752145479]
@@ -525,6 +520,12 @@ layout_mode = 2
 tooltip_text = "Terminate Export"
 icon = ExtResource("26_owbk2")
 expand_icon = true
+
+[node name="IgnoreAnimation" type="CheckBox" parent="MainUI/LeftPanel" unique_id=205192751]
+unique_name_in_owner = true
+layout_mode = 2
+tooltip_text = "ignore animation when exporting 360 frames"
+text = "STATIC EXPORT (skip animation)"
 
 [node name="ProgressBar" type="ProgressBar" parent="MainUI/LeftPanel" unique_id=1227814647]
 unique_name_in_owner = true
